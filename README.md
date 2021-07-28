@@ -1,9 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <br />
 <p align="center">
 
@@ -49,8 +43,6 @@
 </details>
 
 ## About The Project
-
-[![Capstone][product-screenshot]](https://eroauditore.github.io/Leaderboard)
 
 A Leaderboard project with webpack and JavaScript
 
@@ -117,19 +109,5 @@ License Free.
 
 ## Acknowledgements
 
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)
 - [WebPack](https://webpack.js.org/)
-
-[contributors-shield]: https://img.shields.io/github/contributors/eroauditore/Leaderboard?style=for-the-badge
-[contributors-url]: https://github.com/eroauditore/Leaderboard/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/eroauditore/Leaderboard?style=for-the-badge
-[forks-url]: https://github.com/eroauditore/Leaderboard/network/members
-[stars-shield]: https://img.shields.io/github/stars/eroauditore/Leaderboard?style=for-the-badge
-[stars-url]: https://github.com/eroauditore/Leaderboard/stargazers
-[issues-shield]: https://img.shields.io/github/issues/eroauditore/Leaderboard?style=for-the-badge
-[issues-url]: https://github.com/eroauditore/Leaderboard/issues
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/juan-carlos-hernandez-200a05175
-[product-screenshot]: https://user-images.githubusercontent.com/44485810/127217147-02736d8e-7eb8-42f8-a225-5897ca8ab983.png
