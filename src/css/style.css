@@ -4,8 +4,6 @@
 body,
 main,
 div,
-h1,
-h2,
 h3,
 ul,
 li,
@@ -16,7 +14,7 @@ p {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: black;
   margin: 0;
   padding: 0;
@@ -33,43 +31,51 @@ body {
 }
 
 .container {
-  max-width: 400px;
   margin-top: 5rem;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 li {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid rgba(201, 194, 194, 0.966);
-  box-shadow: 2px 2px 12px rgb(0 0 0 / 5%);
 }
 
-i,
-.div-content,
-.title-text,
-.div-content p {
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 0.5rem;
-  background-color: transparent;
-}
-
-.txt-list,
-.txt-input,
-.btn-clear {
+.score-container {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 1.5rem;
-  box-sizing: border-box;
-  border: none;
-  background: none;
-  color: #383838;
-  font-weight: 600;
 }
 
-.btn-clear {
-  background-color: #d6d6db;
+.left-container {
+  max-width: 450px;
+  margin-left: 2rem;
 }
 
-input:focus {
-  outline: none;
+.right-container {
+  max-width: 450px;
+  margin-right: 2rem;
+}
+
+.refresh-container {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 150px;
+}
+
+.btn-submit {
+  max-width: 100px;
+  align-self: flex-end;
+}
+
+.score-list {
+  border: 1px solid rgba(201, 194, 194, 0.966);
+  box-shadow: 2px 2px 12px rgb(0 0 0 / 5%);
 }
