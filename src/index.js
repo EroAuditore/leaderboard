@@ -3,15 +3,19 @@ import LiElement from "./components/LiElement";
 import { getScores, addScores } from "./data";
 import form from "./components/form";
 
-const gameId = "pMxFA7HzjrI3CVSUQpgA";
-
 const displayData = () => {
-  const data = getScores();
   const sl = document.getElementById("score-list");
-  sl.innerHTML = "";
-  data.forEach((score) => {
-    const li = LiElement(score);
-    sl.append(li);
+  const response = getScores();
+  const data = [];
+
+  response.then(function (response) {
+    // handle success
+    data = [...response.data.result];
+    sl.innerHTML = "";
+    data.forEach((score) => {
+      const li = LiElement(score);
+      sl.append(li);
+    });
   });
 };
 
