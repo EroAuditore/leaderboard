@@ -1,2 +1,3 @@
-import "./css/style.css";
-console.log("loading javascirpt");
+import './css/style.css';
+
+console.log('loading javascirpt');
