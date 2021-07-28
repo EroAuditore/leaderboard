@@ -50,8 +50,6 @@
 
 ## About The Project
 
-[![Capstone][product-screenshot]](https://eroauditore.github.io/Leaderboard)
-
 A Leaderboard project with webpack and JavaScript
 
 ### Built With
