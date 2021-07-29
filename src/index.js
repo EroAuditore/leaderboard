@@ -1,20 +1,20 @@
-import "./css/style.css";
-import LiElement from "./components/LiElement";
-import { getScores, addScores } from "./data";
-import form from "./components/form";
+import './css/style.css';
+import LiElement from './components/LiElement';
+import { getScores, addScores } from './data';
+import form from './components/form';
 
 const displayData = () => {
-  const sl = document.getElementById("score-list");
+  const sl = document.getElementById('score-list');
   const response = getScores();
   let data = [];
-  const liLoading = LiElement({ user: "Getting data from API", score: "" });
+  const liLoading = LiElement({ user: 'Getting data from API', score: '' });
   sl.append(liLoading);
 
   response
-    .then(function (response) {
+    .then((response) => {
       // handle success
       data = [...response.data.result];
-      sl.innerHTML = "";
+      sl.innerHTML = '';
       data.forEach((score) => {
         const li = LiElement(score);
         sl.append(li);
@@ -23,16 +23,17 @@ const displayData = () => {
     .catch((error) => {
       const liLoading = LiElement({
         user: "Couldn't get data from API :(",
-        score: "",
+        score: '',
       });
+      console.log(error);
       sl.append(liLoading);
     });
 };
 
 const submitScore = (e) => {
   e.preventDefault();
-  const user = document.getElementById("name").value;
-  const score = document.getElementById("score").value;
+  const user = document.getElementById('name').value;
+  const score = document.getElementById('score').value;
   const game = { user, score };
 
   const response = addScores(game);
@@ -49,8 +50,8 @@ const hanldeRefresh = () => {
 const startApp = () => {
   displayData();
   form(submitScore);
-  //Event haldler for refresh
-  const btnRefresh = document.getElementById("refresh");
+  // Event haldler for refresh
+  const btnRefresh = document.getElementById('refresh');
   btnRefresh.onclick = hanldeRefresh;
 };
 
