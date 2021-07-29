@@ -15,8 +15,12 @@ const displayData = () => {
       // handle success
       data = [...response.data.result];
       sl.innerHTML = '';
-      data.forEach((score) => {
+      data.forEach((score, index) => {
         const li = LiElement(score);
+        if (index % 2 === 0) {
+          li.classList.add('bg-secondary');
+          console.log('index', index);
+        }
         sl.append(li);
       });
     })
@@ -25,7 +29,7 @@ const displayData = () => {
         user: "Couldn't get data from API :(",
         score: '',
       });
-      console.log(error);
+      sl.append(error);
       sl.append(liLoading);
     });
 };
