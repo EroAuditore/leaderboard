@@ -8,8 +8,9 @@ const getScores = async () => {
   return response;
 };
 
-const addScores = (score) => {
-  scores.push(score);
+const addScores = async (game) => {
+  const response = await axios.post(`${apiURL}/games/${gameId}/scores`, game);
+  return response;
 };
 
 export { getScores, addScores };
