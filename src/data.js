@@ -1,13 +1,16 @@
-const scores = [
-  { name: 'Juan', score: 90 },
-  { name: 'Marco', score: 70 },
-  { name: 'Alma marcela', score: 95 },
-];
+import axios from 'axios';
 
-const getScores = () => scores;
+const gameId = 'pMxFA7HzjrI3CVSUQpgA';
+const apiURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 
-const addScores = (score) => {
-  scores.push(score);
+const getScores = async () => {
+  const response = await axios.get(`${apiURL}/games/${gameId}/scores`);
+  return response;
+};
+
+const addScores = async (game) => {
+  const response = await axios.post(`${apiURL}/games/${gameId}/scores`, game);
+  return response;
 };
 
 export { getScores, addScores };
