@@ -9,7 +9,7 @@
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">Live Demo</a>
+    <a href="https://eroauditore.github.io/leaderboard/">Live Demo</a>
     ·
     <a href="https://github.com/eroauditore/leaderboard/issues">Report Bug</a>
     ·
